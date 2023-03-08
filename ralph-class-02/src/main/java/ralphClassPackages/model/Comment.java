@@ -1,28 +1,22 @@
-package roketaPackages.model;
+package ralphClassPackages.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @Entity
-public class Position {
+public class Comment {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long code;
-	
-	private String name;
+	private long code;
 
-	private String position;
+	private String author;
 
-	private double salary;
-
-	
-
-	
-	
-
+	private String text;
 }

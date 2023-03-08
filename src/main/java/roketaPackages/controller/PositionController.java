@@ -27,5 +27,7 @@ public class PositionController {
 	public Position register(@RequestBody Position obj) {
 		return positionRepository.save(obj);
 	}
+	
+	
 
 }
